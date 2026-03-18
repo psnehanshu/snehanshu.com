@@ -142,7 +142,7 @@
     {
       "company": "NEXA (formerly Social Mobile)",
       "title": "Fullstack Software Engineer",
-      "period": "Oct 2021 – Present · Remote",
+      "period": "Oct 2021 \u2013 Present \u00b7 Remote",
       "bullets": [
         "Designing microservices and data models for a Google Android Management API-based MDM that now manages 300K+ devices.",
         "Built ingestion pipelines and structured logging that capture 1M+ telemetry data points per day with DataDog-backed monitoring.",
@@ -152,7 +152,7 @@
     {
       "company": "Valuefy Solutions Pvt Ltd",
       "title": "Software Development Engineer",
-      "period": "Dec 2020 – Oct 2021 · Mumbai",
+      "period": "Dec 2020 \u2013 Oct 2021 \u00b7 Mumbai",
       "bullets": [
         "Delivered maker-checker workflows and compliance features for Barclays, Validus, and other asset-management clients.",
         "Implemented granular audit logging so portfolio actions and configuration changes are reviewable months later.",
@@ -162,7 +162,7 @@
     {
       "company": "Swaymetrics.com",
       "title": "Software Engineer (Founding team)",
-      "period": "Aug 2019 – Jul 2020 · Remote",
+      "period": "Aug 2019 \u2013 Jul 2020 \u00b7 Remote",
       "bullets": [
         "Launched a serverless marketing analytics SaaS that generated dynamic campaign reports on demand.",
         "Led a small dev pod, partnering directly with the founder to ship features under aggressive timelines.",
@@ -178,7 +178,11 @@
         "Hookable lifecycle for CALL / CALLRESULT / CALLERROR flows",
         "Used by teams prototyping hardware and validating backend workflows"
       ],
-      "tech": ["Node.js", "OCPP 1.6/2.0.1", "WebSockets"],
+      "tech": [
+        "Node.js",
+        "OCPP 1.6/2.0.1",
+        "WebSockets"
+      ],
       "link": "https://github.com/pSnehanshu/ocpp-task-manager"
     },
     {
@@ -188,7 +192,11 @@
         "Opinionated structure for sessions, routing, and device state",
         "Pairs with Task Manager to simulate large charger fleets"
       ],
-      "tech": ["Node.js", "Express", "OCPP"],
+      "tech": [
+        "Node.js",
+        "Express",
+        "OCPP"
+      ],
       "link": "https://github.com/pSnehanshu/ocpp-central-system-boilerplate-code"
     },
     {
@@ -198,8 +206,84 @@
         "Declarative ACLs, wildcard scopes, and audit-friendly assignments",
         "Ships as an npm module powering internal SaaS tooling"
       ],
-      "tech": ["Node.js", "MongoDB", "Access Control"],
+      "tech": [
+        "Node.js",
+        "MongoDB",
+        "Access Control"
+      ],
       "link": "https://github.com/pSnehanshu/node-bifrost"
+    },
+    {
+      "name": "Zigbolt",
+      "description": "EV-fleet management platform for charger operators and MSPs.",
+      "highlights": [
+        "Multi-tenant dashboards for charger health, tariffs, and remote commands",
+        "Leverages ocpp-task-manager pipelines for firmware, diagnostics, and alerts"
+      ],
+      "tech": [
+        "TypeScript",
+        "NestJS",
+        "PostgreSQL",
+        "OCPP"
+      ],
+      "link": "https://github.com/pSnehanshu/zigbolt"
+    },
+    {
+      "name": "ShopAt.bio",
+      "description": "Social-commerce storefront builder that turns any bio link into a shoppable page.",
+      "highlights": [
+        "Dynamic product cards, inventory, and Stripe-powered checkout links",
+        "Edge-ready Next.js experience tuned for mobile conversion"
+      ],
+      "tech": [
+        "Next.js",
+        "Tailwind CSS",
+        "Stripe",
+        "Vercel"
+      ],
+      "link": "https://github.com/pSnehanshu/ShopAt.bio"
+    },
+    {
+      "name": "Mongo GUI",
+      "description": "Self-hosted MongoDB graphical interface for browsing, querying, and editing data.",
+      "highlights": [
+        "Visual query builder plus aggregation explorer with dark/light themes",
+        "Role-based access so ops and analysts can inspect production safely"
+      ],
+      "tech": [
+        "TypeScript",
+        "Next.js",
+        "MongoDB"
+      ],
+      "link": "https://github.com/pSnehanshu/mongo-gui"
+    },
+    {
+      "name": "RemoteOK Notifier",
+      "description": "Bot that pings engineers about new RemoteOK listings with rich filters.",
+      "highlights": [
+        "Scrapes RemoteOK feeds, deduplicates, and enforces keyword/salary filters",
+        "Sends instant notifications to Telegram or Slack channels"
+      ],
+      "tech": [
+        "TypeScript",
+        "Node.js",
+        "Telegram API"
+      ],
+      "link": "https://github.com/pSnehanshu/remoteok-notifier"
+    },
+    {
+      "name": "React Gravatar or Initials",
+      "description": "React component that falls back to initials when Gravatar images are missing.",
+      "highlights": [
+        "Supports UI Avatars, custom palettes, and uppercase logic",
+        "Published to npm and embedded across internal dashboards"
+      ],
+      "tech": [
+        "React",
+        "JavaScript",
+        "Storybook"
+      ],
+      "link": "https://github.com/pSnehanshu/react-gravatar-or-initials"
     }
   ]
 }

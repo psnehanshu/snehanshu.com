@@ -5,17 +5,14 @@ layout: layout.html
 <section class="mx-auto flex min-h-screen max-w-6xl flex-col justify-center gap-10 p-4">
   <header class="text-center">
     <p class="text-xs font-semibold uppercase tracking-[0.3em] text-teal-300">
-      Fullstack software engineer · EV-charging & SaaS systems
+      Snehanshu Phukon · Fullstack + EV systems engineer
     </p>
     <h1 class="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
-      I build reliable software for massive device fleets, fintech workflows, and
-      EV-charging networks.
+      I turned my resume into a website—everything you need is right here.
     </h1>
     <p class="mt-4 text-lg text-slate-200 sm:text-xl">
-      I'm Snehanshu Phukon from Guwahati, India—currently scaling NEXA/Social Mobile's
-      Android MDM platform while sharing open-source OCPP tooling with the community.
-      I thrive in ambiguous spaces that demand product intuition, clean code, and
-      ruthless attention to operations.
+      Based in Guwahati, India and currently shipping Android Enterprise MDM at NEXA/Social Mobile.
+      I’ve spent 5+ years building SaaS, fintech, and e-mobility platforms end-to-end for remote-first teams.
     </p>
     <div class="mt-6 flex flex-wrap justify-center gap-3">
       <a
@@ -28,13 +25,6 @@ layout: layout.html
         Book a 15-min call
       </a>
       <a
-        href="/assets/media/snehanshu-phukon-resume.pdf"
-        class="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-base font-semibold transition hover:-translate-y-1 hover:border-white hover:bg-white/10"
-      >
-        <span class="text-xl">📄</span>
-        Download resume
-      </a>
-      <a
         href="mailto:hello@snehanshu.com"
         class="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-base font-semibold transition hover:-translate-y-1 hover:border-white hover:bg-white/10"
       >
@@ -42,10 +32,23 @@ layout: layout.html
         hello@snehanshu.com
       </a>
     </div>
-    <p class="mt-3 text-sm text-slate-400">
-      Available for senior fullstack roles (remote preferred) around SaaS, e-mobility, or
-      Android Enterprise tooling.
-    </p>
+    <div class="mx-auto mt-6 grid max-w-4xl gap-4 text-left sm:grid-cols-3">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+        <p class="text-sm uppercase tracking-[0.3em] text-teal-300">Location</p>
+        <p class="text-lg font-semibold">Guwahati → Remote-first</p>
+        <p class="text-sm text-slate-300">Open to IST-friendly distributed teams.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+        <p class="text-sm uppercase tracking-[0.3em] text-teal-300">Experience</p>
+        <p class="text-lg font-semibold">5+ years</p>
+        <p class="text-sm text-slate-300">MDM, fintech, martech, and e-mobility stacks.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+        <p class="text-sm uppercase tracking-[0.3em] text-teal-300">Focus</p>
+        <p class="text-lg font-semibold">SaaS & EV infra</p>
+        <p class="text-sm text-slate-300">OCPP tooling, observability, and resilient APIs.</p>
+      </div>
+    </div>
   </header>
 
   <div class="grid gap-4 md:grid-cols-2">
@@ -90,10 +93,9 @@ layout: layout.html
 <section id="projects" class="mx-auto mt-12 max-w-6xl p-4">
   <div class="text-center">
     <p class="text-xs uppercase tracking-[0.3em] text-teal-300">Selected Projects</p>
-    <h2 class="mt-2 text-3xl font-semibold">Open-source work that teams actually use</h2>
+    <h2 class="mt-2 text-3xl font-semibold">Product work people still rely on</h2>
     <p class="mt-2 text-base text-slate-300">
-      I publish tooling whenever I need to solve a hard problem more than once.
-      Here are a few repos people reach for.
+      From open-source infrastructure to experimental SaaS, here’s the work that keeps resurfacing in my day job.
     </p>
   </div>
   <div class="mt-8 grid gap-6 lg:grid-cols-3">
@@ -146,20 +148,21 @@ layout: layout.html
   </div>
 </section>
 
-<section id="writing" class="mx-auto mt-12 max-w-4xl p-4 text-center">
-  <p class="text-xs uppercase tracking-[0.3em] text-teal-300">Writing</p>
-  <h2 class="mt-2 text-3xl font-semibold">Stuff I have (barely) written ✍️</h2>
-  <ul class="mt-6 space-y-3 text-left">
-    {%- for post in collections.post reversed -%}
-    <li>
-      I wrote
-      <a class="underline decoration-teal-300 underline-offset-4 hover:text-teal-200" href="{{ post.url }}">
-        {{ post.data.title }}
-      </a>
-      on a {% funny_day post.date %}
-    </li>
-    {%- endfor -%}
-  </ul>
+<section id="education" class="mx-auto mt-12 max-w-4xl p-4">
+  <div class="text-center">
+    <p class="text-xs uppercase tracking-[0.3em] text-teal-300">Education</p>
+    <h2 class="mt-2 text-3xl font-semibold">Formal training</h2>
+  </div>
+  <article class="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/20">
+    <p class="text-sm uppercase tracking-[0.3em] text-teal-300">2017 – 2021</p>
+    <h3 class="text-2xl font-semibold">B.Tech, Computer Science & Engineering</h3>
+    <p class="text-base text-slate-200">Central Institute of Technology, Kokrajhar</p>
+    <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+      <li>Built an OCPP charge point simulator as a capstone, sparking my ongoing EV-charging work.</li>
+      <li>Led project teams that delivered serverless analytics tooling and fintech prototypes.</li>
+      <li>Grounding in distributed systems, low-level networking, and applied mathematics.</li>
+    </ul>
+  </article>
 </section>
 
 <section id="contact" class="mx-auto my-16 max-w-3xl rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-xl shadow-black/20">
