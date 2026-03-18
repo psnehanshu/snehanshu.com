@@ -284,6 +284,34 @@
         "Express"
       ],
       "link": "https://github.com/pSnehanshu/SPChat"
+    },
+    {
+      "name": "TVMafia",
+      "description": "Curated tracker for TV shows and streaming schedules with collaborative watchlists.",
+      "highlights": [
+        "Aggregates show schedules and streaming availability",
+        "Shareable watchlists and cross-platform reminders"
+      ],
+      "tech": [
+        "Node.js",
+        "React",
+        "Redis"
+      ],
+      "link": "https://github.com/pSnehanshu/tvmafia"
+    },
+    {
+      "name": "EdBox",
+      "description": "Lightweight LMS tools and classroom utilities for educators and small schools.",
+      "highlights": [
+        "Simple assignment workflows and gradebook exports",
+        "Designed for low-bandwidth classrooms"
+      ],
+      "tech": [
+        "Vue.js",
+        "Firebase",
+        "Node.js"
+      ],
+      "link": "https://github.com/pSnehanshu/edbox"
     }
   ]
 }
