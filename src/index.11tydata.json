@@ -115,5 +115,91 @@
       "icon": "/assets/media/skills/11ty.svg",
       "link": "https://11ty.dev"
     }
+  ],
+  "stats": [
+    {
+      "value": "5+ years",
+      "label": "Shipping production SaaS",
+      "detail": "MDM, fintech, martech and e-mobility platforms since 2019."
+    },
+    {
+      "value": "300K+",
+      "label": "Android devices managed",
+      "detail": "Devices enrolled in NEXA / Social Mobile's MDM console."
+    },
+    {
+      "value": "1M+ events",
+      "label": "Telemetry processed daily",
+      "detail": "Structured logging + DataDog monitoring pipelines."
+    },
+    {
+      "value": "3 OSS kits",
+      "label": "EV-charging tooling",
+      "detail": "Open-source OCPP frameworks and simulators used by teams worldwide."
+    }
+  ],
+  "experience": [
+    {
+      "company": "NEXA (formerly Social Mobile)",
+      "title": "Fullstack Software Engineer",
+      "period": "Oct 2021 – Present · Remote",
+      "bullets": [
+        "Designing microservices and data models for a Google Android Management API-based MDM that now manages 300K+ devices.",
+        "Built ingestion pipelines and structured logging that capture 1M+ telemetry data points per day with DataDog-backed monitoring.",
+        "Own core technical decisions, code reviews, and deployment playbooks to keep global device fleets healthy."
+      ]
+    },
+    {
+      "company": "Valuefy Solutions Pvt Ltd",
+      "title": "Software Development Engineer",
+      "period": "Dec 2020 – Oct 2021 · Mumbai",
+      "bullets": [
+        "Delivered maker-checker workflows and compliance features for Barclays, Validus, and other asset-management clients.",
+        "Implemented granular audit logging so portfolio actions and configuration changes are reviewable months later.",
+        "Collaborated with PMs, designers, and client teams to launch financial calculation modules such as XIRR."
+      ]
+    },
+    {
+      "company": "Swaymetrics.com",
+      "title": "Software Engineer (Founding team)",
+      "period": "Aug 2019 – Jul 2020 · Remote",
+      "bullets": [
+        "Launched a serverless marketing analytics SaaS that generated dynamic campaign reports on demand.",
+        "Led a small dev pod, partnering directly with the founder to ship features under aggressive timelines.",
+        "Implemented pixel-perfect UI flows with designers while keeping infra costs lean."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "OCPP Task Manager",
+      "description": "Transport-layer agnostic Node.js framework for building EV charge point simulators and CSMS backends.",
+      "highlights": [
+        "Hookable lifecycle for CALL / CALLRESULT / CALLERROR flows",
+        "Used by teams prototyping hardware and validating backend workflows"
+      ],
+      "tech": ["Node.js", "OCPP 1.6/2.0.1", "WebSockets"],
+      "link": "https://github.com/pSnehanshu/ocpp-task-manager"
+    },
+    {
+      "name": "OCPP Central System Boilerplate",
+      "description": "Ready-to-run CSMS starter that lets companies bootstrap OCPP integrations quickly.",
+      "highlights": [
+        "Opinionated structure for sessions, routing, and device state",
+        "Pairs with Task Manager to simulate large charger fleets"
+      ],
+      "tech": ["Node.js", "Express", "OCPP"],
+      "link": "https://github.com/pSnehanshu/ocpp-central-system-boilerplate-code"
+    },
+    {
+      "name": "node-bifrost",
+      "description": "Role + scope-based access control layer for Node.js SaaS apps backed by MongoDB.",
+      "highlights": [
+        "Declarative ACLs, wildcard scopes, and audit-friendly assignments",
+        "Ships as an npm module powering internal SaaS tooling"
+      ],
+      "tech": ["Node.js", "MongoDB", "Access Control"],
+      "link": "https://github.com/pSnehanshu/node-bifrost"
+    }
   ]
 }
