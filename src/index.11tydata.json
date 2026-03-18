@@ -273,43 +273,51 @@
     },
     {
       "name": "SPChat",
-      "description": "Realtime chat application originally built for campus clubs using Socket.IO.",
+      "description": "Socket.IO chatroom built with Express for quick campus conversations.",
       "highlights": [
-        "Room-based messaging with presence indicators and read receipts",
-        "Simple onboarding so school teams could coordinate events without third-party tools"
+        "Minimal Node/Express server with Socket.IO broadcasts and presence tracking.",
+        "Environment-driven config via dotenv so clubs could self-host it without code changes."
       ],
       "tech": [
         "Node.js",
+        "Express",
         "Socket.IO",
-        "Express"
+        "dotenv"
       ],
       "link": "https://github.com/pSnehanshu/SPChat"
     },
     {
       "name": "TVMafia",
-      "description": "Curated tracker for TV shows and streaming schedules with collaborative watchlists.",
+      "description": "Bun-powered streaming tracker that pairs a TanStack Router front-end with a tRPC backend.",
       "highlights": [
-        "Aggregates show schedules and streaming availability",
-        "Shareable watchlists and cross-platform reminders"
+        "Uses Bun, TanStack Router, and React Query for ultra-fast UI navigation and caching.",
+        "Drizzle ORM + PostgreSQL capture watchlists, reminders, and markdown notes for every show."
       ],
       "tech": [
-        "Node.js",
-        "React",
-        "Redis"
+        "Bun",
+        "TypeScript",
+        "TanStack Router",
+        "tRPC",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "React"
       ],
       "link": "https://github.com/pSnehanshu/tvmafia"
     },
     {
       "name": "EdBox",
-      "description": "Lightweight LMS tools and classroom utilities for educators and small schools.",
+      "description": "Monorepo LMS with Expo mobile apps, a Chakra UI web portal, and a Prisma-backed Node API.",
       "highlights": [
-        "Simple assignment workflows and gradebook exports",
-        "Designed for low-bandwidth classrooms"
+        "Yarn workspaces orchestrate Expo mobile, web, and backend packages in one repo.",
+        "Prisma + PostgreSQL drive assignments, messaging, and notifications for school communities."
       ],
       "tech": [
-        "Vue.js",
-        "Firebase",
-        "Node.js"
+        "TypeScript",
+        "Expo / React Native",
+        "Chakra UI",
+        "Node.js",
+        "Prisma",
+        "PostgreSQL"
       ],
       "link": "https://github.com/pSnehanshu/edbox"
     }
