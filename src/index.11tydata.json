@@ -244,20 +244,6 @@
       "link": "https://github.com/pSnehanshu/ShopAt.bio"
     },
     {
-      "name": "Mongo GUI",
-      "description": "Self-hosted MongoDB graphical interface for browsing, querying, and editing data.",
-      "highlights": [
-        "Visual query builder plus aggregation explorer with dark/light themes",
-        "Role-based access so ops and analysts can inspect production safely"
-      ],
-      "tech": [
-        "TypeScript",
-        "Next.js",
-        "MongoDB"
-      ],
-      "link": "https://github.com/pSnehanshu/mongo-gui"
-    },
-    {
       "name": "RemoteOK Notifier",
       "description": "Bot that pings engineers about new RemoteOK listings with rich filters.",
       "highlights": [
@@ -284,6 +270,20 @@
         "Storybook"
       ],
       "link": "https://github.com/pSnehanshu/react-gravatar-or-initials"
+    },
+    {
+      "name": "SPChat",
+      "description": "Realtime chat application originally built for campus clubs using Socket.IO.",
+      "highlights": [
+        "Room-based messaging with presence indicators and read receipts",
+        "Simple onboarding so school teams could coordinate events without third-party tools"
+      ],
+      "tech": [
+        "Node.js",
+        "Socket.IO",
+        "Express"
+      ],
+      "link": "https://github.com/pSnehanshu/SPChat"
     }
   ]
 }
