@@ -4,6 +4,8 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/favicon.ico");
   eleventyConfig.addPassthroughCopy("./src/assets/media");
+  eleventyConfig.addPassthroughCopy({ "src/2000s/style.css": "2000s/style.css" });
+  eleventyConfig.addPassthroughCopy({ "src/2000s/media": "2000s/media" });
   eleventyConfig.addWatchTarget("_site/assets/main.css");
 
   eleventyConfig.addTransform("htmlmin", function (content) {

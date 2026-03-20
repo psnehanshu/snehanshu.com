@@ -3,86 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Snehanshu.com — Retro 2000s Edition</title>
+  <title>Snehanshu 98.7 — Dev Radio</title>
   <link rel="stylesheet" href="/2000s/style.css">
   <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAQAIBRAA7">
 </head>
 <body>
   <div class="page">
-    <header>
-      <img class="pixel-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Snehanshu" alt="Pixel avatar of Snehanshu">
+    <header class="radio-banner">
       <div>
-        <h1><span class="star">★</span> Hi! I'm <span class="name">Snehanshu Phukon</span> <span class="star">★</span></h1>
-        <p class="tagline">Full Stack Dev • EV-Charging / OCPP tinkerer • Bangalore ↔ Guwahati</p>
+        <p class="station">Snehanshu 98.7 FM</p>
+        <h1>Song after sprint after build… there’s always another release you’ll love!</h1>
+        <p class="subtitle">Full stack broadcasts from Guwahati → Bangalore. Powered by TypeScript, Go, EV chargers &amp; remote-first teams.</p>
       </div>
+      <img src="media/dancing-note.gif" alt="Dancing note" class="banner-gif">
     </header>
 
-    <marquee behavior="scroll" direction="left" scrollamount="4" class="ticker">
-      ⚡ Building remote-first tools with TypeScript, Go, and React • Always up for EV infra chats • Remote-friendly roles welcome ⚡
-    </marquee>
+    <div class="rainbow-bar"></div>
+    <marquee class="ticker" scrollamount="5">⚡ Remote-friendly roles wanted • TypeScript · Go · React/Native · Tailwind · PostgreSQL · Kafka · Android MDM · EV charging infra ⚡</marquee>
 
-    <section class="content">
-      <table>
-        <tr>
-          <th colspan="2">About Me</th>
-        </tr>
-        <tr>
-          <td class="label">What I do</td>
-          <td>Ship full-stack products (web, mobile, backend) for fleets &amp; device management. Currently at NEXA/Social Mobile.</td>
-        </tr>
-        <tr>
-          <td class="label">Fav stacks</td>
-          <td>TypeScript · Node/Golang · React / React Native · PostgreSQL · Kafka · TailwindCSS (yes, even in 2004).</td>
-        </tr>
-        <tr>
-          <td class="label">Projects</td>
-          <td>
-            <ul>
-              <li><strong>ocpp-task-manager</strong> – choreographs EV charging jobs.</li>
-              <li><strong>ocpp-central-system</strong> – boilerplate for OCPP backends.</li>
-              <li>Assorted SaaS utilities + tooling experiments.</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
+    <div class="info-strip">
+      <div>📡 Live now: Shipping Android MDM @ NEXA/Social Mobile</div>
+      <div>🕘 IST mornings (9 AM–2 PM) • Remote-friendly (~45K USD)</div>
+      <div>📧 hello@snehanshu.com • github.com/pSnehanshu</div>
+    </div>
 
-      <table>
-        <tr>
-          <th colspan="2">Quick Links</th>
-        </tr>
-        <tr>
-          <td colspan="2" class="links">
-            <a href="https://www.snehanshu.com">Modern Homepage</a>
-            <a href="https://github.com/pSnehanshu">GitHub</a>
-            <a href="mailto:hello@snehanshu.com">Email</a>
-            <a href="https://www.linkedin.com/in/snehanshu-phukon/">LinkedIn</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="label">Status</td>
-          <td><blink>Looking for remote-friendly roles (~45k USD) starting 2026.</blink></td>
-        </tr>
-      </table>
+    <div class="layout">
+      <nav class="left-nav">
+        <a href="#home">Home Page</a>
+        <a href="#projects">Projects</a>
+        <a href="#news">Dev Log</a>
+        <a href="#tooling">Toolbox</a>
+        <a href="#events">Talks &amp; Sessions</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/pSnehanshu" target="_blank">Code Vault</a>
+        <a href="mailto:hello@snehanshu.com">Request a Collab</a>
+      </nav>
 
-      <table>
-        <tr>
-          <th colspan="2">Contact / Availability</th>
-        </tr>
-        <tr>
-          <td class="label">Timezone</td>
-          <td>Asia/Kolkata (IST) — prefer workdays starting 9 AM – 2 PM IST.</td>
-        </tr>
-        <tr>
-          <td class="label">Best way</td>
-          <td>Short, clear emails or GitHub issues. I reply fast.</td>
-        </tr>
-      </table>
-    </section>
+      <main class="center">
+        <section id="news" class="block neon">
+          <h2>Dev Match Game: win uptime &amp; happiness!</h2>
+          <p>Ship TypeScript service Tuesday and win up to 100% uptime! Kickoff begins Monday in Bangalore—join live pairings, weekly office hours, and remote hack mornings. There’s even a “Late Night Build” edition with midnight deploy playlists.</p>
+          <div class="highlight-cards">
+            <div>
+              <p class="label">Current quest</p>
+              <p>Remote device deployments + EV fleets</p>
+            </div>
+            <div>
+              <p class="label">Office hours</p>
+              <p>Fridays · book via email</p>
+            </div>
+            <div>
+              <p class="label">Next stream</p>
+              <p>“GeoCities Dev Nostalgia” · Apr 20</p>
+            </div>
+          </div>
+          <p class="cta">👉 <strong>Enter the build queue:</strong> email <a href="mailto:hello@snehanshu.com">hello@snehanshu.com</a></p>
+        </section>
+
+        <section class="block" id="projects">
+          <h2>Featured Projects</h2>
+          <article>
+            <h3>ocpp-task-manager</h3>
+            <p>Automates firmware rolls, diagnostics, and charger orchestration so fleets stay compliant. Built with Go, Kafka, PostgreSQL.</p>
+          </article>
+          <article>
+            <h3>ocpp central system boilerplate</h3>
+            <p>Launch-ready backend template for chargers—monitoring, alerting, and dashboards wired in. Makes EV infra teams faster.</p>
+          </article>
+          <article>
+            <h3>Remote Ops Toolkit</h3>
+            <p>SaaS utilities, deploy scripts, and dashboards that keep distributed teams shipping without drama.</p>
+          </article>
+        </section>
+
+        <section class="block" id="tooling">
+          <h2>Toolbox Broadcast</h2>
+          <ul>
+            <li>🎛️ TypeScript · Go · React/React Native · Tailwind · PostgreSQL · Kafka.</li>
+            <li>📡 Device layer: Android Enterprise, remote OTA updates, observability.</li>
+            <li>🛠️ Dev energy: design systems, release tooling, high-signal dashboards.</li>
+          </ul>
+        </section>
+
+        <section class="block" id="contact">
+          <h2>Request Line</h2>
+          <p>📬 <strong>Email:</strong> <a href="mailto:hello@snehanshu.com">hello@snehanshu.com</a></p>
+          <p>💻 <strong>GitHub:</strong> <a href="https://github.com/pSnehanshu">github.com/pSnehanshu</a></p>
+          <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/snehanshu-phukon/">/in/snehanshu-phukon</a></p>
+        </section>
+      </main>
+
+      <aside class="right-rail" id="events">
+        <div class="equalizer"></div>
+        <div class="clock">IST 09:25</div>
+        <h2>Concert Spotlight (talks)</h2>
+        <ul>
+          <li><strong>EV Fleet Telemetry</strong><br>Remote meetup • Apr 5</li>
+          <li><strong>Android MDM lessons</strong><br>Internal brown bag • Apr 12</li>
+          <li><strong>GeoCities Dev Nostalgia</strong><br>Fun stream • Apr 20</li>
+          <li><strong>Office Hours</strong><br>Fridays · Book via email</li>
+        </ul>
+        <div class="promo">80's Remote Night — bring your weirdest side projects!</div>
+        <img src="https://www.animatedimages.org/data/media/532/animated-under-construction-image-0094.gif" alt="Under construction" class="under-construction">
+      </aside>
+    </div>
 
     <footer>
-      <p>© <span id="year"></span> Snehanshu • Crafted on a CRT-friendly palette • <span class="counter">Visitor #000042</span></p>
+      <p>© <span id="year"></span> Snehanshu Phukon • Broadcasting from GeoCities Sector 98.7</p>
     </footer>
   </div>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
