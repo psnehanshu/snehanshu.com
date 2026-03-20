@@ -225,6 +225,17 @@ body {
   margin-bottom: 10px;
   border: 2px solid #ffe29a;
   text-shadow: 2px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.clock-label {
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
 .equalizer {

@@ -15,7 +15,7 @@
         <h1>Song after sprint after build… there’s always another release you’ll love!</h1>
         <p class="subtitle">Full stack broadcasts from Guwahati → Bangalore. Powered by TypeScript, Go, EV chargers &amp; remote-first teams.</p>
       </div>
-      <img src="media/dancing-note.gif" alt="Dancing note" class="banner-gif">
+      <img src="/2000s/media/dancing-note.gif" alt="Dancing note" class="banner-gif">
     </header>
 
     <div class="rainbow-bar"></div>
@@ -23,7 +23,7 @@
 
     <div class="info-strip">
       <div>📡 Live now: Shipping Android MDM @ NEXA/Social Mobile</div>
-      <div>🕘 IST mornings (9 AM–2 PM) • Remote-friendly (~45K USD)</div>
+      <div>🕘 IST mornings (9 AM–2 PM) • Remote-friendly roles</div>
       <div>📧 hello@snehanshu.com • github.com/pSnehanshu</div>
     </div>
 
@@ -33,7 +33,6 @@
         <a href="#projects">Projects</a>
         <a href="#news">Dev Log</a>
         <a href="#tooling">Toolbox</a>
-        <a href="#events">Talks &amp; Sessions</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/pSnehanshu" target="_blank">Code Vault</a>
         <a href="mailto:hello@snehanshu.com">Request a Collab</a>
@@ -95,8 +94,8 @@
 
       <aside class="right-rail" id="events">
         <div class="equalizer"></div>
-        <div class="clock">IST 09:25</div>
-        <h2>Concert Spotlight (talks)</h2>
+        <div class="clock"><span class="clock-label">IST</span><span id="ist-time">09:25</span></div>
+        <h2>Concert Spotlight</h2>
         <ul>
           <li><strong>EV Fleet Telemetry</strong><br>Remote meetup • Apr 5</li>
           <li><strong>Android MDM lessons</strong><br>Internal brown bag • Apr 12</li>
@@ -115,6 +114,18 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const istTarget = document.getElementById('ist-time');
+    function updateIST() {
+      if (!istTarget) return;
+      const now = new Date();
+      const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+      const ist = new Date(utc + 5.5 * 60 * 60 * 1000);
+      const hours = String(ist.getHours()).padStart(2, '0');
+      const minutes = String(ist.getMinutes()).padStart(2, '0');
+      istTarget.textContent = `${hours}:${minutes}`;
+    }
+    updateIST();
+    setInterval(updateIST, 60000);
   </script>
 </body>
 </html>
